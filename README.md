@@ -1,56 +1,73 @@
-# Tic Tac Toe Game
+# Tic Tac Toe – Web Game
 
-A simple and fun Tic Tac Toe game for two players, built with HTML, CSS, and JavaScript.  
-Players can enter their names, track their scores, and switch between light and dark themes while enjoying smooth animations and responsive design.
+Welcome to the **Tic Tac Toe** web game repository! This is a fun and beginner-friendly project built using **HTML**, **CSS**, and **JavaScript**. It includes modern enhancements like player name input, score tracking, light/dark theme toggle, and more—all without using any backend database.
+
+## 🕹️ About the Project
+
+This project allows two players to play Tic Tac Toe in the browser with features that make the game interactive and user-friendly. It's ideal for those who are just getting started with frontend web development or JavaScript DOM manipulation.
+
+### ✨ Key Features
+
+* 🎮 **Two-player mode** with custom name input
+* 🧠 **Score tracking** using `localStorage` (X wins, O wins, Draws)
+* 🌗 **Light/Dark mode toggle**
+* 📦 **No database required** – everything runs in the browser
+* 📱 **Responsive UI** for desktop and mobile
+* 🎉 Smooth **win animations** and alerts
+
+## 📂 Project Structure
+
+```
+tic-tac-toe/
+├── index.html           # Main HTML file
+├── style.css            # CSS styles (light/dark mode, layout)
+├── app.js               # Game logic with DOM interactions
+├── README.md            # Project documentation
+```
+
+## 🚀 Live Demo
+
+Once you push this to a public GitHub repository and enable GitHub Pages, your game will be live at:
+
+```
+https://<your-github-username>.github.io/<repository-name>/
+```
+
+Example for your profile:
+➡️ [https://kala-techies.github.io/tic-tac-toe/](https://kala-techies.github.io/tic-tac-toe/)
+
+## 🛠️ How to Use
+
+1. **Clone the Repository**
+
+   ```bash
+   git clone https://github.com/kala-techies/tic-tac-toe.git
+   cd tic-tac-toe
+   ```
+
+2. **Open `index.html` in your browser**
+   Just double-click the file or run with Live Server in VSCode.
+
+3. **Start the Game**
+
+   * Enter player names.
+   * Play and enjoy!
+   * Toggle dark/light theme.
+   * Track your score across sessions.
+
+## 🤝 Contributions
+
+Have ideas to improve the UI or add a computer opponent?
+Pull requests are welcome! Let’s learn and build together.
+
+## 📬 Contact
+
+Have questions or suggestions? Reach out to me:
+
+📧 Email: [connectwithkala18@gmail.com](mailto:connectwithkala18@gmail.com)
+🔗 GitHub: [github.com/kala-techies](https://github.com/kala-techies)
 
 ---
 
-## Project Description
+## Happy Coding & Game On! 🎯
 
-This game allows two players to compete in classic Tic Tac Toe. It features:
-
-- Player name inputs stored locally during the session
-- Score tracking for Player X, Player O, and draws
-- Dark/Light mode toggle for user preference
-- Win animations highlighting the winning line
-- Buttons to reset the current game or start a new game with new player names
-
-The game is lightweight, runs fully in the browser, and requires no backend or database.
-
----
-
-## How to Use
-
-1. Open `index.html` in your browser.
-2. Enter names for Player X and Player O.
-3. Click **Start Game** to begin.
-4. Take turns clicking the boxes to place your marks.
-5. Watch the score update automatically when a player wins or a draw occurs.
-6. Use **Reset** to restart the current game.
-7. Use **New Game** to enter new player names.
-8. Toggle dark/light mode for your preferred look.
-
----
-
-## File Structure
-
-- `index.html` — Game layout and input fields  
-- `style.css` — Styling for both themes, buttons, animations  
-- `app.js` — Game logic, score tracking, theme toggle  
-
----
-
-## Contact
-
-If you want to connect, please reach out at:  
-📧 connectwithkala18@gmail.com
-
----
-
-## License
-
-This project is open source and free to use.
-
----
-
-*Created by Kala*
