@@ -1,9 +1,8 @@
-name: Deploy Tic Tac Toe Game to GitHub Pages
+name: Deploy Tic Tac Toe to GitHub Pages
 
 on:
   push:
-    branches:
-      - main
+    branches: [main]
 
 permissions:
   contents: read
@@ -17,17 +16,18 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout Code
+      - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Setup GitHub Pages
-        uses: actions/configure-pages@v3
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
 
-      - name: Upload GitHub Pages Artifact
-        uses: actions/upload-pages-artifact@v2
+      - name: Upload GitHub Pages artifact
+        uses: actions/upload-pages-artifact@v3
         with:
-          path: '.'  # Adjust this if your files are in a subdirectory
+          path: './'  # Adjust this path if your site is in a subdirectory
 
   deploy:
     needs: build
@@ -35,7 +35,8 @@ jobs:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
+
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v3
+        uses: actions/deploy-pages@v4
