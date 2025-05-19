@@ -1,4 +1,4 @@
-name: Deploy Tic Tac Toe Game
+name: Deploy Tic Tac Toe Game to GitHub Pages
 
 on:
   push:
@@ -18,16 +18,16 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout Code
         uses: actions/checkout@v4
 
-      - name: Setup Pages
+      - name: Setup GitHub Pages
         uses: actions/configure-pages@v3
 
-      - name: Upload static files
+      - name: Upload GitHub Pages Artifact
         uses: actions/upload-pages-artifact@v2
         with:
-          path: '.'  # Use the root if your index.html is in the root
+          path: '.'  # Adjust this if your files are in a subdirectory
 
   deploy:
     needs: build
